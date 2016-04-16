@@ -5,7 +5,7 @@
 * system administration dashboard
 
 ## Current features:
-* POC for servlets and JSP.
+* servlets POC - getting params, serving dynamic jsons, static content, templated JSP.
 
 ## Future features:
 * secure UI - spring-security, angular, etc.
