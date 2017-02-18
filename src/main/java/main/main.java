@@ -13,10 +13,13 @@ import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import main.notmain;
+
 @Controller
 @EnableAutoConfiguration
 public class main {
-
+    public int parsum = 0;
+    
     @Controller
     public static class JSPController {
         @RequestMapping("/jsptest")
@@ -34,7 +37,9 @@ public class main {
     @RequestMapping("/groo")
     @ResponseBody
     String groo(@RequestParam String par1) {
-        return "param1 = "+par1;
+        parsum += Integer.parseInt(par1);
+        notmain.myvar += parsum;
+        return "parsum = "+parsum;
     }
 
     @RequestMapping("/jsontest") 

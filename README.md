@@ -1,7 +1,7 @@
 # pink-dash
 
 ## Overview:
-* excersize in fast webapp dev with spring-boot
+* exercize in fast webapp dev with spring-boot
 * system administration dashboard
 
 ## Current features:
